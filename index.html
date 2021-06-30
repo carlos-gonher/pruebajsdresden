@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Prueba Frontend</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="examen.css">
+        <script type="text/javascript" src="examen.js"></script>
+  </head>
+  <body>
+      <form action="#" method="post">
+            <div class="my-3 p-3 bg-white rounded box-shadow">
+                <h6 class="border-bottom border-gray pb-2 mb-0">Acciones a realizar</h6>
+                <div class="media text-muted pt-3">
+                    <button type="button" class="btn btn-primary botones" id="showone-btn">Mostrar</button>
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                      <strong class="d-block text-gray-dark">Mostrar uno</strong>
+                    </p>
+                </div>
+                <div class="media text-muted pt-3">
+                    <button type="button" class="btn btn-primary botones" id="showall-btn">Todos</button>
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                      <strong class="d-block text-gray-dark">Mostrar todos</strong>
+                    </p>
+                </div>
+                <div class="media text-muted pt-3">
+                    <button type="button" class="btn btn-primary botones" id="editone-btn">Editar</button>
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                      <strong class="d-block text-gray-dark">Editar elemento</strong>
+                      <input type="text" value="1" id="edit_one" maxlength="2" size="4">
+                    </p>
+                </div>
+                <div class="media text-muted pt-3">
+                    <button type="button" class="btn btn-primary botones" id="deleteone-btn">Eliminar</button>
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                      <strong class="d-block text-gray-dark">Eliminar elemento</strong>
+                      <input type="text" value="1" id="delete_one" maxlength="2" size="4">
+                    </p>
+                </div>
+                <div class="media text-muted pt-3">
+                    <button type="button" class="btn btn-primary botones" id="createone-btn">Crear</button>
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                      <strong class="d-block text-gray-dark">Crear elemento</strong>
+                      Title: <input type="text" value="" id="createtitle" maxlength="15" size="15">
+                      Body: <input type="text" value="" id="createbody" maxlength="15" size="15">
+                      userId: <input type="text" value="1" id="createuserid" maxlength="5" size="5">
+                    </p>
+                </div>
+            </div>
+      </form>
+      <div>&nbsp;</div>
+      <div class="my-3 p-3 bg-white rounded box-shadow">
+          <h6 class="border-bottom border-gray pb-2 mb-0">Resultado</h6>
+          <div class="media text-muted pt-3" id="result_elements"></div>
+      </div>
+  </body>
+</html>
+<script>Examen.init();</script>
